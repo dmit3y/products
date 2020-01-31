@@ -23,11 +23,6 @@ def runserver():
     run()
 
 @cli.command()
-def ttt(*args, **kwargs):
-    unittest.main()
-
-
-@cli.command()
 @click.argument("filename")
 def loadcsv(filename):
     """Load CSV in db"""

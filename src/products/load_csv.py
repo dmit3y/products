@@ -21,8 +21,6 @@ async def load_csv(filename):
             row["import_id"] = import_id
             created = int(await provider.save_product(row))
 
-            # print(dict(row))
-
             if created:
                 total_created += 1
             else:

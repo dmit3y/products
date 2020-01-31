@@ -1,0 +1,2 @@
+#!/bin/sh
+python /usr/src/app/run.py loadcsv /usr/share/data/data.csv >> /dev/stdout

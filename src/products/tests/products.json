@@ -1,0 +1,92 @@
+[
+    {
+        "product_name": "Bread - Sour Batard",
+        "photo_url": "",
+        "barcode": "1391",
+        "price_cents": "17996",
+        "producer": "",
+        "sku": "3b306d53-7bc1-4190-84cc-e9814f370612",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Mushroom - Portebello",
+        "photo_url": "http://dummyimage.com/105x178.png/5fa2dd/ffffff",
+        "barcode": "3241",
+        "price_cents": "76257",
+        "producer": "Spencer-Hermiston",
+        "sku": "bc7db9fa-406e-4795-a6c7-ec0ef7b32196",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Cheese - Le Cheve Noir",
+        "photo_url": "",
+        "barcode": "70700",
+        "price_cents": "67929",
+        "producer": "",
+        "sku": "bc210c5a-6af7-4a67-b751-03ce4c81b426",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Pasta - Penne, Lisce, Dry",
+        "photo_url": "http://dummyimage.com/128x236.bmp/5fa2dd/ffffff",
+        "barcode": "90224",
+        "price_cents": "72961",
+        "producer": "Keefe and Sons",
+        "sku": "87d45a8b-8664-4ead-9b9b-6fdd03758508",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Couscous",
+        "photo_url": "http://dummyimage.com/181x209.bmp/5fa2dd/ffffff",
+        "barcode": "73014",
+        "price_cents": "99024",
+        "producer": "Altenwerth Inc",
+        "sku": "a870d64a-9b75-452a-a181-0e75826f1ae3",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Chivas Regal - 12 Year Old",
+        "photo_url": "http://dummyimage.com/101x167.png/ff4444/ffffff",
+        "barcode": "7134",
+        "price_cents": "63831",
+        "producer": "Reichert Group",
+        "sku": "7cae093d-b23a-43c4-a581-9aa732ba6d1a",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Tomatoes - Heirloom",
+        "photo_url": "http://dummyimage.com/180x143.jpg/dddddd/000000",
+        "barcode": "E9379",
+        "price_cents": "97777",
+        "producer": "Homenick, Toy and Kovacek",
+        "sku": "7af38817-4c5b-4c5d-9a3e-20bef6256980",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Snapple - Mango Maddness",
+        "photo_url": "http://dummyimage.com/128x170.png/cc0000/ffffff",
+        "barcode": "75539",
+        "price_cents": "10393",
+        "producer": "Waelchi Group",
+        "sku": "045e2593-69d9-41fe-b6dc-a2cf8a8345df",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Chocolate - Pistoles, White",
+        "photo_url": "",
+        "barcode": "64880",
+        "price_cents": "45588",
+        "producer": "",
+        "sku": "a363fab4-4d46-4aac-8a4b-8602b492cac7",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    },
+    {
+        "product_name": "Onions - Red",
+        "photo_url": "http://dummyimage.com/122x198.bmp/dddddd/000000",
+        "barcode": "V180",
+        "price_cents": "33800",
+        "producer": "Kerluke-Gerhold",
+        "sku": "a2d7a9df-5cd4-4293-bbea-d5ce9af19609",
+        "import_id": "f97c6573-dab0-4ae5-b8e1-396bdea9e5a8"
+    }
+]

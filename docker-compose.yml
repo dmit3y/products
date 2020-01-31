@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+    mongo:
+        image: mongo:4
+        restart: always
+        environment:
+        - MONGO_INITDB_ROOT_USERNAME=products
+        - MONGO_INITDB_ROOT_PASSWORD=eg2aBi3y
+    app:
+        build: ./src/
+        environment:
+            - MONGO_HOST=mongo
+            - MONGO_PORT=27017
+            - MONGO_USER=products
+            - MONGO_PASSWORD=eg2aBi3y
+        ports:
+            - 8080:8080
+        depends_on:
+            - mongo
+        volumes:
+            - ./data.csv:/usr/share/data/data.csv:ro
+    cron:
+        build: ./src/
+        environment:
+            - MONGO_HOST=mongo
+            - MONGO_PORT=27017
+            - MONGO_USER=products
+            - MONGO_PASSWORD=eg2aBi3y
+        depends_on:
+            - mongo
+        volumes:
+            - ./data.csv:/usr/share/data/data.csv:ro
+        command: crond -fS

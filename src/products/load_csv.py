@@ -6,11 +6,12 @@ from .db import MongodbProvider
 
 logger = logging.getLogger(__name__)
 
+
 async def load_csv(filename):
     provider = MongodbProvider()
     await provider.setup()
 
-    with open(filename, 'r') as f:
+    with open(filename, "r") as f:
         products_reader = csv.DictReader(f)
 
         import_id = str(uuid.uuid4())
@@ -28,9 +29,9 @@ async def load_csv(filename):
 
         total_deleted = await provider.delete_products_with_another_import_id(import_id)
 
-    logger.info("CSV import finished. new=%s, exisiting=%s, deleted=%s", total_created, total_updated, total_deleted)
-
-
-
-
-
+    logger.info(
+        "CSV import finished. new=%s, exisiting=%s, deleted=%s",
+        total_created,
+        total_updated,
+        total_deleted,
+    )

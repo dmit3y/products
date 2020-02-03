@@ -13,9 +13,12 @@ TESTS_PATH = os.path.dirname(os.path.abspath(__file__))
 TEST_DB_NAME = "test_db"
 
 loop = asyncio.new_event_loop()
+
+
 def async_test(coro):
     def wrapper(*args, **kwargs):
         return loop.run_until_complete(coro(*args, **kwargs))
+
     return wrapper
 
 
@@ -24,7 +27,7 @@ class SetUpProvderMixin(AioHTTPTestCase):
         self.provider = MongodbProvider(settings.MONGO_URI, TEST_DB_NAME)
         await self.provider.setup()
 
-        async with AIOFile(os.path.join(TESTS_PATH, 'products.json'), 'r') as f:
+        async with AIOFile(os.path.join(TESTS_PATH, "products.json"), "r") as f:
             self.products = json.loads(await f.read())
 
         for product in self.products:

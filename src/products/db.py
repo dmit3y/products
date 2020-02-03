@@ -3,6 +3,7 @@ import pymongo
 
 from . import settings
 
+
 class MongodbProvider:
     def __init__(self, uri=settings.MONGO_URI, db=settings.MONGO_DB):
         self.uri = uri
@@ -22,7 +23,7 @@ class MongodbProvider:
         if producer is not None:
             qs["producer"] = producer
 
-        proj = {'_id': False, "import_id": False}
+        proj = {"_id": False, "import_id": False}
         if fields:
             for field in fields:
                 proj[field] = True
@@ -32,11 +33,7 @@ class MongodbProvider:
 
     async def save_product(self, product):
         result = await self.db.products.replace_one(
-            {
-                "sku": product["sku"]
-            },
-            product,
-            upsert=True
+            {"sku": product["sku"]}, product, upsert=True
         )
         return True if result.upserted_id else False
 
@@ -44,14 +41,18 @@ class MongodbProvider:
         result = await self.db.products.delete_many({"import_id": {"$ne": import_id}})
         return result.deleted_count
 
+
 def inject_data_provider(cls, name):
     async def injector(app):
         app[name] = cls()
         await app[name].setup()
+
     return injector
+
 
 def get_provider_cls():
     return MongodbProvider
+
 
 async def init_db():
     provider = MongodbProvider()
